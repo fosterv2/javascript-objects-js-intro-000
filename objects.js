@@ -1,9 +1,9 @@
-var playlist = {};
+var playlist = {Sara Bareilles : 'Gravity'};
 
-function updatePlaylist(playlist, name, title) {
-  return Object.assign({}, playlist, { [name] : title })
+function updatePlaylist(play, name, title) {
+  return Object.assign({}, play, { [name] : title })
 }
 
-function removeFromPlaylist(playlist, name) {
+function removeFromPlaylist(play, name) {
   return delete playlist.name
 }
